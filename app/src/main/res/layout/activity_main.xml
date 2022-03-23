@@ -5,36 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#0A0D5B"
+    android:background="@color/white"
     tools:context=".MainActivity">
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="WELCOME TO"
-        android:fontFamily="@font/risque_regular"
-        android:textSize="36sp"
-        android:textColor="@color/white"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:layout_marginTop="70dp"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="E-Learning App"
-        android:fontFamily="@font/risque_regular"
-        android:textSize="36sp"
-        android:textColor="@color/white"
-        android:layout_gravity="center"
-        android:gravity="center" />
+        android:layout_height="200dp"
+        android:background="@drawable/main_corner"
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/group"
-        android:layout_gravity="center"
-        android:foregroundGravity="center"
-        android:layout_marginTop="80dp"/>
+        />
+
 
 
 </LinearLayout>
