@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#0A0D5B"
-    tools:context=".MainActivity">
+    tools:context=".LancherActivity">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -35,6 +35,18 @@
         android:layout_gravity="center"
         android:foregroundGravity="center"
         android:layout_marginTop="80dp"/>
-
+    <Button
+        android:id="@+id/startBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="Get Started"
+        android:fontFamily="@font/risque_regular"
+        android:textColor="#363333"
+        android:background="@drawable/round_button"
+        android:textSize="36sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        />
 
 </LinearLayout>

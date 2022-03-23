@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/koliche/AndroidStudioProjects/MyElearning/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/koliche/AndroidStudioProjects/MyElearning/app/src/main/res/drawable/round_button.xml" value="0.111" />
+        <entry key="..\:/Users/koliche/AndroidStudioProjects/MyElearning/app/src/main/res/layout/activity_lancher.xml" value="0.18469431380932022" />
+        <entry key="..\:/Users/koliche/AndroidStudioProjects/MyElearning/app/src/main/res/layout/activity_main.xml" value="0.2076923076923077" />
       </map>
     </option>
   </component>
