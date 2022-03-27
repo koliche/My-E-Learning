@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Main"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome  Back !"
+        android:textSize="48dp"
+        android:fontFamily="@font/risque_regular"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="100dp"/>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/sign"
+        android:layout_marginTop="52dp"
+        />
+    <EditText
+        android:id="@+id/logEmail"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:hint="Enter your Email"
+        android:paddingStart="20dp"
+        android:paddingEnd="15dp"
+        android:background="@drawable/inputs_corner"
+        android:layout_marginTop="36dp"
+        android:layout_marginLeft="30dp"/>
+    <EditText
+        android:id="@+id/logPassword"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:hint="Enter your password"
+        android:paddingStart="20dp"
+        android:paddingEnd="15dp"
+        android:background="@drawable/inputs_corner"
+        android:layout_marginTop="36dp"
+        android:layout_marginLeft="30dp"/>
+    <TextView
+        android:id="@+id/forgetPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forget password"
+        android:textColor="#FFA598F4"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_marginLeft="36dp"/>
+    <Button
+        android:id="@+id/logInBTN"
+        android:layout_width="176dp"
+        android:layout_height="60dp"
+        android:background="@drawable/round_button"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="LOG IN"
+        android:textColor="#FF363333"
+        android:textSize="36dp"
+        android:fontFamily="@font/risque_regular"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="I dont have an acount ?"
+            android:textColor="#BFBFBF"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/logSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:layout_gravity="center"
+            android:text=" Sign up"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/teal_200"
+            android:textSize="20dp" />
+    </LinearLayout>
+</LinearLayout>

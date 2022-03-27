@@ -19,7 +19,7 @@ public class LancherActivity extends AppCompatActivity {
         get_start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(LancherActivity.this,MainActivity.class);
+                Intent intent = new Intent(LancherActivity.this,LoginActivity.class);
                 startActivity(intent);
             }
         });
