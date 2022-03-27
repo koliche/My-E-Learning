@@ -32,7 +32,6 @@ public class LancherActivity extends AppCompatActivity {
                     Intent intent = new Intent(LancherActivity.this,MainActivity.class);
                     startActivity(intent);
                 }
-
             }
         });
     }
