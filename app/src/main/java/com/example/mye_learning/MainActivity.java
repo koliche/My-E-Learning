@@ -9,6 +9,10 @@ import android.annotation.SuppressLint;
 import android.os.Bundle;
 
 import com.example.mye_learning.databinding.ActivityMainBinding;
+import com.example.mye_learning.fragments.HomeFragment;
+import com.example.mye_learning.fragments.SaveFragment;
+import com.example.mye_learning.fragments.SearchFragment;
+import com.example.mye_learning.fragments.SettingsFragment;
 
 public class MainActivity extends AppCompatActivity {
     ActivityMainBinding binding;

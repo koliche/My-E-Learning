@@ -1,4 +1,4 @@
-package com.example.mye_learning;
+package com.example.mye_learning.classes;
 
 public class User {
     public String fullname, email;
