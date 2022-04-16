@@ -27,10 +27,12 @@ public class LancherActivity extends AppCompatActivity {
                 if(currentUser == null){
                     Intent intent = new Intent(LancherActivity.this,LoginActivity.class);
                     startActivity(intent);
+                    finish();
                 }
                 else {
                     Intent intent = new Intent(LancherActivity.this,MainActivity.class);
                     startActivity(intent);
+                    finish();
                 }
             }
         });

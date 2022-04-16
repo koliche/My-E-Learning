@@ -2,7 +2,6 @@ package com.example.mye_learning.fragments;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,8 +10,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
-import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.constraintlayout.widget.ConstraintSet;
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -23,14 +21,10 @@ import com.example.mye_learning.classes.PopularCatigorie;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
-import com.google.firebase.storage.FirebaseStorage;
 import com.squareup.picasso.Picasso;
-
-import java.util.ArrayList;
 
 public class HomeFragment extends Fragment {
 
@@ -71,7 +65,7 @@ public class HomeFragment extends Fragment {
         final Query query = FirebaseDatabase.getInstance().getReference().child("Catigorie");
         firebaseAllRecyclerAdapter = new FirebaseRecyclerAdapter<PopularCatigorie, MyAllViewHolder>(
                 PopularCatigorie.class,
-                R.layout.popular_cat_recycle_item,
+                R.layout.all_cat_recycle_items,
                 MyAllViewHolder.class,
                 query){
             @Override
@@ -125,7 +119,7 @@ public class HomeFragment extends Fragment {
                     }
                 });
                 // this is the Onclick listner for all Items
-                viewHolder.constraintLayoutPopularCat.setOnClickListener(new View.OnClickListener() {
+                viewHolder.cardViewPopularCat.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
                         startActivity(new Intent(getContext(), TestActivity.class));
@@ -142,22 +136,22 @@ public class HomeFragment extends Fragment {
         TextView catName, catDate;
         public MyAllViewHolder(@NonNull View itemView) {
             super(itemView);
-            imgCat = itemView.findViewById(R.id.catImage);
-            catName = itemView.findViewById(R.id.catName);
-            catDate= itemView.findViewById(R.id.dateCat);
+            imgCat = itemView.findViewById(R.id.catImage1);
+            catName = itemView.findViewById(R.id.catName1);
+            catDate= itemView.findViewById(R.id.dateCat1);
         }
     }
 
     public static class MyViewHolder extends RecyclerView.ViewHolder {
         ImageView imgCat;
         TextView catName, catDate;
-        ConstraintLayout constraintLayoutPopularCat;
+        CardView cardViewPopularCat;
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             imgCat = itemView.findViewById(R.id.catImage);
             catName = itemView.findViewById(R.id.catName);
             catDate= itemView.findViewById(R.id.dateCat);
-            constraintLayoutPopularCat = itemView.findViewById(R.id.categoryId);
+            cardViewPopularCat = itemView.findViewById(R.id.categoryId);
         }
     }
 }
