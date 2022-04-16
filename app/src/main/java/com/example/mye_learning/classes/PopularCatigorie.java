@@ -1,37 +1,37 @@
 package com.example.mye_learning.classes;
 
 public class PopularCatigorie {
-    private int img;
-    private String catName;
-    private int numCcours;
-
-    public PopularCatigorie(int img, String catName, int numCcours) {
+    private  String img;
+    private  String title;
+    private  String date;
+    public PopularCatigorie(){}
+    public PopularCatigorie(String img, String title, String date) {
         this.img = img;
-        this.catName = catName;
-        this.numCcours = numCcours;
+        this.title = title;
+        this.date = date;
     }
 
-    public int getImg() {
-        return img;
+    public  String getImg() {
+        return this.img;
     }
 
-    public void setImg(int img) {
+    public void setImg(String img) {
         this.img = img;
     }
 
-    public String getCatName() {
-        return catName;
+    public  String getTitle() {
+        return this.title;
     }
 
     public void setCatName(String catName) {
-        this.catName = catName;
+        title = catName;
     }
 
-    public int getNumCcours() {
-        return numCcours;
+    public  String getDate() {
+        return this.date;
     }
 
-    public void setNumCcours(int numCcours) {
-        this.numCcours = numCcours;
+    public void setDate(String date) {
+        this.date = date;
     }
 }
