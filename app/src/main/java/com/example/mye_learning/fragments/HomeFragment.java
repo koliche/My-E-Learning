@@ -15,6 +15,7 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.mye_learning.CoursActivity;
 import com.example.mye_learning.R;
 import com.example.mye_learning.TestActivity;
 import com.example.mye_learning.classes.PopularCatigorie;
@@ -122,9 +123,9 @@ public class HomeFragment extends Fragment {
                 viewHolder.cardViewPopularCat.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        startActivity(new Intent(getContext(), TestActivity.class));
-                        // For geting Id of The all of Cat :
-                        Toast.makeText(getContext(), key, Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(getContext(),CoursActivity.class);
+                        intent.putExtra("catKey",key);
+                        startActivity(intent);
                     }
                 });
             }
