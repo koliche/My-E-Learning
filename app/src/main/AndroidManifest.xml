@@ -13,6 +13,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyElearning">
         <activity
+            android:name=".TemsOfUseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PrivacyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HelpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfielActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RealCourActivity"
+            android:exported="false" />
+        <activity
             android:name=".CoursActivity"
             android:exported="false" />
         <activity

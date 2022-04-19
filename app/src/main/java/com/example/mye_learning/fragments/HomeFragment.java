@@ -16,6 +16,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.mye_learning.CoursActivity;
+import com.example.mye_learning.NotificationActivity;
+import com.example.mye_learning.ProfielActivity;
 import com.example.mye_learning.R;
 import com.example.mye_learning.TestActivity;
 import com.example.mye_learning.classes.PopularCatigorie;
@@ -31,7 +33,8 @@ public class HomeFragment extends Fragment {
 
     // My parameters :
     View view ;
-
+    ImageView notification_image;
+    private ImageView imageProfiel;
     private RecyclerView popularCat;
     private RecyclerView allCatRecycleView;
     private FirebaseRecyclerAdapter<PopularCatigorie,MyViewHolder> firebaseRecyclerAdapter;
@@ -44,7 +47,7 @@ public class HomeFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_home, container, false);
-
+        notification_image = view.findViewById(R.id.notification_image);
         popularCat = view.findViewById(R.id.popularCatRecycleView);
         allCatRecycleView = view.findViewById(R.id.allCatRecycleView);
         popularCat.setHasFixedSize(true);
@@ -52,6 +55,21 @@ public class HomeFragment extends Fragment {
         popularCat.setLayoutManager(new LinearLayoutManager(getContext(),LinearLayoutManager.HORIZONTAL,false));
         allCatRecycleView.setLayoutManager(new LinearLayoutManager(getContext(),LinearLayoutManager.VERTICAL,false));
         popularCatigorie();
+        imageProfiel = view.findViewById(R.id.imageProfiel);
+        imageProfiel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getContext(), ProfielActivity.class);
+                startActivity(intent);
+            }
+        });
+        notification_image.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getContext(), NotificationActivity.class);
+                startActivity(intent);
+            }
+        });
         return view;
     }
 

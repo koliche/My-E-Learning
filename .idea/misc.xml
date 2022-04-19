@@ -5,15 +5,23 @@
       <map>
         <entry key="..\:/Users/koliche/AndroidStudioProjects/MyElearning/app/src/main/res/drawable/inputs_corner.xml" value="0.124" />
         <entry key="..\:/Users/koliche/AndroidStudioProjects/MyElearning/app/src/main/res/drawable/main_corner.xml" value="0.111" />
+        <entry key="..\:/Users/koliche/AndroidStudioProjects/MyElearning/app/src/main/res/drawable/profiel_corner.xml" value="0.1415" />
+        <entry key="..\:/Users/koliche/AndroidStudioProjects/MyElearning/app/src/main/res/drawable/profiel_corner2.xml" value="0.1415" />
         <entry key="..\:/Users/koliche/AndroidStudioProjects/MyElearning/app/src/main/res/drawable/round_button.xml" value="0.111" />
         <entry key="..\:/Users/koliche/AndroidStudioProjects/MyElearning/app/src/main/res/drawable/searche.xml" value="0.168" />
         <entry key="..\:/Users/koliche/AndroidStudioProjects/MyElearning/app/src/main/res/drawable/setting_corner.xml" value="0.137" />
         <entry key="..\:/Users/koliche/AndroidStudioProjects/MyElearning/app/src/main/res/layout/activity_cours.xml" value="0.18469431380932022" />
+        <entry key="..\:/Users/koliche/AndroidStudioProjects/MyElearning/app/src/main/res/layout/activity_help.xml" value="0.18469431380932022" />
         <entry key="..\:/Users/koliche/AndroidStudioProjects/MyElearning/app/src/main/res/layout/activity_lancher.xml" value="0.18469431380932022" />
         <entry key="..\:/Users/koliche/AndroidStudioProjects/MyElearning/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/Users/koliche/AndroidStudioProjects/MyElearning/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/koliche/AndroidStudioProjects/MyElearning/app/src/main/res/layout/activity_notification.xml" value="0.1731509191962377" />
+        <entry key="..\:/Users/koliche/AndroidStudioProjects/MyElearning/app/src/main/res/layout/activity_privacy.xml" value="0.18469431380932022" />
+        <entry key="..\:/Users/koliche/AndroidStudioProjects/MyElearning/app/src/main/res/layout/activity_profiel.xml" value="0.22" />
+        <entry key="..\:/Users/koliche/AndroidStudioProjects/MyElearning/app/src/main/res/layout/activity_real_cour.xml" value="0.18469431380932022" />
         <entry key="..\:/Users/koliche/AndroidStudioProjects/MyElearning/app/src/main/res/layout/activity_reset_password.xml" value="0.18469431380932022" />
         <entry key="..\:/Users/koliche/AndroidStudioProjects/MyElearning/app/src/main/res/layout/activity_signup.xml" value="0.22" />
+        <entry key="..\:/Users/koliche/AndroidStudioProjects/MyElearning/app/src/main/res/layout/activity_tems_of_use.xml" value="0.1" />
         <entry key="..\:/Users/koliche/AndroidStudioProjects/MyElearning/app/src/main/res/layout/activity_test.xml" value="0.1" />
         <entry key="..\:/Users/koliche/AndroidStudioProjects/MyElearning/app/src/main/res/layout/all_cat_recycle_items.xml" value="0.18469431380932022" />
         <entry key="..\:/Users/koliche/AndroidStudioProjects/MyElearning/app/src/main/res/layout/cours_recycle_items.xml" value="0.18469431380932022" />
