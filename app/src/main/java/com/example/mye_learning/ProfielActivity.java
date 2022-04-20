@@ -32,10 +32,24 @@ public class ProfielActivity extends AppCompatActivity {
         profielRecycleView = findViewById(R.id.profielRecycleView);
         profielRecycleView.setHasFixedSize(true);
         profielRecycleView.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false));
+
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        profielCoursOfCatigorie();
+
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
         profielCoursOfCatigorie();
     }
 
     private void profielCoursOfCatigorie() {
+        //Toast.makeText(ProfielActivity.this, "title", Toast.LENGTH_SHORT).show();
         final Query query = FirebaseDatabase.getInstance().getReference().child("AllCours");
         firebaseRecyclerAdapter = new FirebaseRecyclerAdapter<Cours, myProfielViewHolder>(
                 Cours.class,
@@ -50,7 +64,7 @@ public class ProfielActivity extends AppCompatActivity {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                         String title = String.valueOf(snapshot.child("title").getValue());
-                        Toast.makeText(ProfielActivity.this, title, Toast.LENGTH_SHORT).show();
+                       // Toast.makeText(ProfielActivity.this, title, Toast.LENGTH_SHORT).show();
                         myProfielViewHolder.courTitle.setText(title);
                     }
 

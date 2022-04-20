@@ -6,11 +6,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -106,6 +108,14 @@ public class HomeFragment extends Fragment {
 
                     }
                 });
+                viewHolder.allcatigorie.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(getContext(),CoursActivity.class);
+                        intent.putExtra("catKey",key);
+                        startActivity(intent);
+                    }
+                });
             }
         };
         allCatRecycleView.setAdapter(firebaseAllRecyclerAdapter);
@@ -153,11 +163,13 @@ public class HomeFragment extends Fragment {
     public static class MyAllViewHolder extends RecyclerView.ViewHolder {
         ImageView imgCat;
         TextView catName, catDate;
+        ConstraintLayout allcatigorie;
         public MyAllViewHolder(@NonNull View itemView) {
             super(itemView);
             imgCat = itemView.findViewById(R.id.catImage1);
             catName = itemView.findViewById(R.id.catName1);
             catDate= itemView.findViewById(R.id.dateCat1);
+            allcatigorie = itemView.findViewById(R.id.allcatigorie);
         }
     }
 

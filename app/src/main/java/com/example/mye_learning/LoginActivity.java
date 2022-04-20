@@ -109,6 +109,7 @@ public class LoginActivity extends AppCompatActivity {
                                 Intent intent = new Intent(LoginActivity.this,MainActivity.class);
                                 startActivity(intent);
                                 progressBar.setVisibility(View.GONE);
+                                finish();
                             }
                             else {
                                 user.sendEmailVerification();

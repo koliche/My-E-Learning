@@ -54,7 +54,7 @@ public class CoursActivity extends AppCompatActivity {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                         String title = String.valueOf(snapshot.child("title").getValue());
-                        Toast.makeText(CoursActivity.this, title, Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(CoursActivity.this, key, Toast.LENGTH_SHORT).show();
                         viewHolder.courName.setText(title);
                     }
 
@@ -68,6 +68,7 @@ public class CoursActivity extends AppCompatActivity {
                     public void onClick(View view) {
                         Intent intent = new Intent(CoursActivity.this,RealCourActivity.class);
                         intent.putExtra("coursKey",key);
+                        intent.putExtra("catKey",catKey);
                         startActivity(intent);
                     }
                 });

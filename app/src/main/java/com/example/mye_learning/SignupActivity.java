@@ -52,6 +52,7 @@ public class SignupActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(SignupActivity.this,LoginActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
         registerBtn.setOnClickListener(new View.OnClickListener() {
@@ -114,6 +115,7 @@ public class SignupActivity extends AppCompatActivity {
                                         Toast.makeText(SignupActivity.this, "User Has been register successfully", Toast.LENGTH_SHORT).show();
                                         Intent intent = new Intent(SignupActivity.this,LoginActivity.class);
                                         startActivity(intent);
+                                        finish();
 
                                     }
                                     else {
